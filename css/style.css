@@ -63,10 +63,6 @@ ul {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding-bottom: 50px;
     padding-top: 50px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .container .col {
