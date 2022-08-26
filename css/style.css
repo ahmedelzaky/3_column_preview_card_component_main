@@ -51,28 +51,32 @@ ul {
 
 /* end global rules */
 .parent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 
 .parent .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding:20px 0 ;
 }
 
 .container .col {
   padding: 20px 50px 0 30px;
   color: white;
   text-align: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .col:first-child {
   background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .container .col:nth-child(2) {
@@ -81,15 +85,27 @@ ul {
 
 .container .col:nth-child(3) {
   background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 @media (max-width: 768px) {
   .parent {
     height: 100%;
+    
+  }
+  .container .col:first-child{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+  }
+  .container .col:nth-child(3){
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
   }
 }
 
 .container .col img {
   margin: 30px 0 0;
+  width: 80px;
 }
 
 .container .col p {
