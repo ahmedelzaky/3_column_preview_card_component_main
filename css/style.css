@@ -159,6 +159,7 @@ ul {
 }
 
 /* footer */
+
 .attribution {
   display: block;
   font-size: 11px;
@@ -167,6 +168,8 @@ ul {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+
 }
 
 .attribution a {
